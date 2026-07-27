@@ -1,0 +1,29 @@
+{
+  "name": "prospeccao-leads",
+  "version": "1.0.0",
+  "description": "Script de prospeção B2B automática para PMEs portuguesas",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "unsubscribe": "tsx src/unsubscribe/server.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "dotenv": "^16.4.7",
+    "openai": "^4.77.0",
+    "resend": "^4.1.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
